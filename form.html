@@ -1,0 +1,13 @@
+<form action="script.php">
+<input name="asd">
+<input type="submit">
+</form>
+<script type="text/javascript">
+function stopform(){
+	alert('stop!');
+	return false;
+}
+
+form=document.getElementsByTagName('form');
+form[0].addEventListener('submit',stopform);
+</script>
