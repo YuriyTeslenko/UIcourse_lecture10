@@ -3,9 +3,10 @@
 <input type="submit">
 </form>
 <script type="text/javascript">
-function stopform(){
+function stopform(e){
 	alert('stop!');
-	return false;
+	e.preventDefault();
+    //e.stopPropagation();
 }
 
 form=document.getElementsByTagName('form');
